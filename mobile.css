@@ -1,0 +1,422 @@
+@media only screen and (max-width: 600px){
+	/*hamburger section*/
+	.ham{
+		position: fixed;
+		top: 17%;
+		right: 5%;
+		display: flex;
+		flex-direction: column;
+		width: 35px;
+		height: 30px;
+		padding: 0.1rem;
+		border: 2px solid white;
+		z-index: 1000000;
+	}
+
+
+	.line{
+      border: 1px solid white;
+      margin-top: 0.4rem;
+	}
+	/*end hamburger section*/
+
+	.backblack{
+		display: flex;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: black;
+		width: 100%;
+		opacity: 0.9;
+		z-index: 100000;
+		transform: translateY(-200rem);
+		transition: 0.4s ease;
+	}
+
+	.backblackshow{
+		transform: translateY(0);
+	}
+	
+	/*nav section*/
+
+	.navtop .navsocial{
+		position: fixed;
+		bottom: 10%;
+		/*flex*/
+		opacity: 0;
+		transform: translateY(50rem);
+		transition: 0.5s ease;
+	}
+
+	 .navcall{
+	 	margin-left: 3rem;
+	 }
+
+
+	.navsocialshow{
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	.navcont p{
+		font-size: 1rem;
+		/*display: none;*/
+        margin-left: 0.6rem;
+	}
+
+	.navcont img{
+		margin-left: 2rem;
+	}
+
+	.navbot .navlist{
+      position: fixed;
+      top: 10%;
+      left: 0%;
+      /*display: none;*/
+	}
+
+	.navul{
+		transition: 0.4s ease;
+		transform: translateX(100rem);
+		z-index: 1000000;
+	}
+
+	.navulshow{
+		transform: translateX(0);
+	}
+
+
+
+	.navbot ul{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 2rem;
+	}
+
+	.navbot ul .navitem{
+		margin-top: 5rem;
+		font-size: 2.5rem;
+		text-align: center;
+		align-items: center;
+		letter-spacing: 2px;
+		margin-left: 6rem;
+	}
+
+	.navhead h1{
+		font-size: 2rem;
+	}
+	/*end nav section*/
+
+	body{
+		overflow-x: hidden;
+	}
+
+	/*main section*/
+	.main{
+		height: 72rem;
+		border-bottom: 2px solid orange;
+	}
+	.main .mainhead{
+		text-align: center;
+		width: 100%;
+		position: relative;
+		top: 30%;
+		left: 0%;
+		font-size: 2rem;
+	}
+
+	.main .mainhead .span1{
+		font-size: 4rem;
+	}
+	/*end main section*/
+
+	/*about section*/
+	.about{
+		flex-direction: column;
+	}
+
+	.aboutleft{
+		width: 100%;
+		transform: translateX(0);
+		align-items: center;
+		text-align: center;
+	}
+
+	.about .aboutright{
+		margin-left: 0;
+		width: 100%;
+		display: none;
+	}
+
+	.about .abouthead{
+		font-size: 3rem;
+	}
+
+	.about .aboutpara{
+		text-align: center;
+		width: 120%;
+		margin-top: 2rem;
+		padding-bottom: 2rem;
+		margin-left: -2rem;
+	}
+
+	.about .aboutbtn{
+		width: 100%;
+	}
+
+
+	.aboutpic1,.aboutpic2,.aboutbox1,.aboutbox2{
+		width: 12rem;
+		height: 14rem;
+		transform: translateY(0);
+	}
+
+	.aboutbox3,.aboutbox4{
+		width: 12rem;
+		height: 10rem;
+		transform: translateY(0);
+	}
+
+
+	/*end about section*/
+
+	/*services section*/
+	.services{
+		min-height: 65rem;
+	}
+
+	.servicecont{
+     min-height: 65rem;
+	}
+
+	.servicecontmain{
+		width: 100%;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+
+	.servicecont{
+		margin-top: -2rem;
+	}
+
+	.servicehead{
+		display: flex;
+		justify-content: center;
+		font-size: 3rem;
+	}
+
+	.servicehead h1{
+     margin-left: 0rem;
+	}
+	/*end services section*/
+
+	/*training section*/
+	.training{
+		flex-direction: column;
+		min-height: 100rem;
+		justify-content: center;
+	}
+
+	.trainhead{
+		display: flex;
+		justify-content: center;
+		font-size: 3rem;
+	}
+
+	.trainhead h2{
+		margin-left: 0rem;
+	}
+
+	.traindiv{
+		flex-direction: column;
+	}
+
+	.traindes{
+		margin-right: 0;
+		margin-top: 1rem;
+	}
+
+	.traindes h2{
+     font-size: 3rem;
+	}
+
+	.traindes h3{
+		font-size: 4rem;
+	}
+
+	.trainimg{
+		margin-top: 0;
+		height: 90%;
+	}
+
+	.traincontainer > a > img{
+		width: 80%;
+		height: 80%;
+	}
+
+	.traincontainer{
+		grid-gap: 0px;
+		 grid-auto-rows: 100px;
+	}
+
+	
+	
+	/*end training section*/
+
+	/*Gallery Section*/
+	.Gallery{
+		min-height: 69rem;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.galleryhead{
+		display: flex;
+		justify-content: center;
+		font-size: 3rem;
+	}
+
+	.galleryhead h1{
+		margin-left: 0;
+	}
+
+	.gallerymain{
+		margin-left: 0;
+		margin-top: 5rem;
+		height: 100%;
+		overflow-y: scroll;
+	}
+
+	.Gallerycontainer{
+		height: 80%;
+		margin-left: 5rem;
+	}
+
+	.gallerymain::-webkit-scrollbar {
+  width: 15px;
+  transition: 0.5s ease;
+  opacity: 0;
+  padding: 5px;
+  margin: 5rem;
+}
+
+..gallerymain::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px orange; 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+ /*Handle */
+..gallerymain::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #001a33; 
+}
+
+ /*Handle on hover */
+..gallerymain::-webkit-scrollbar:hover {
+  opacity: 1;
+}
+
+
+	/*end Gallery section*/
+
+	/*Accredition section*/
+	.acc{
+    overflow-x: hidden;
+    min-height: 100rem ;
+	}
+
+	.acchead{
+		font-size: 3rem;
+		display: flex;
+		justify-content: center;
+		/*flex-direction: column;*/
+	}
+
+	.acchead h1{
+    margin-left: 0rem;
+	}
+
+	.acc-cont{
+		flex-direction: column;
+	}
+
+	.acc-des p{
+		width: 100%;
+		height: 100%;
+		border-bottom: none;
+	}
+
+	.acc-des .acc-para{
+		height: 69rem;
+		margin-left: 0;
+		border-bottom: 2px solid orange;
+	}
+
+	.accfile{
+		height: 100%;
+		margin-top: 13rem;
+	}
+
+	.acccont{
+		width: 25rem;
+		height: 20rem;
+	}
+
+
+	/*end Accredition section*/
+	/*contact section*/
+  .contact{
+  align-items: center;
+  justify-content: center;
+  } 
+
+	.contact-head {
+		display: flex;
+		justify-content: center;
+  font-size: 3rem;
+	}
+
+
+	.contact-head span{
+		font-size: 5.5rem;
+	}
+
+	.contact-head h1{
+		margin-left: 0;
+	}
+
+
+  .contact-cont1 .social .navcap,.navcap{
+  	font-size: 2.2rem;
+  }
+
+	.contact-cont{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+  .contact-c{
+  	width: 25rem;
+  	margin-left: 0;
+  	padding: 2rem;
+  	margin-top: 2rem;
+  }
+
+  .social .navsocial ul li{
+   margin-right: 1rem;
+}
+
+  #contactform{
+  	margin-left: 0rem;
+  }
+	/*end contact section*/
+}

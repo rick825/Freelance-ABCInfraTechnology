@@ -1,0 +1,1319 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html{
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+body{
+	width: 100%;
+  height: 100%;
+}
+
+/*hero section*/
+#hero{
+	width: 100%;
+	height: 100%;
+}
+
+.hero{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+
+.ham{
+display: none;
+}
+
+#aboutscroll{
+	position: absolute;
+	top: -20%;
+	opacity: 0;
+}
+
+#Servicescroll{
+	position: absolute;
+	top: -17%;
+	opacity: 0;
+}
+
+#trainscroll{
+	position: absolute;
+	top: -15%;
+}
+
+#galleryscroll{
+	top: -15%;
+	position: absolute;
+}
+
+
+.backblack{
+	display: none;
+}
+
+/*nav section*/
+#nav{
+	position: relative;
+	width: 100%;
+}
+
+.nav{
+	width: 100%;
+   position: fixed;
+   z-index: 100000;
+}
+
+.navrow{
+	/*background-color: #1f1f2e;*/
+	width: 100%;
+}
+
+.navrow:before{
+	content: " ";
+	height: 100%;
+	width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 1;
+    z-index: -1;
+}
+
+
+/*nav top section*/
+.navtop{
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 1rem;
+color: white;
+border-bottom: 1px solid orange;
+}
+
+.navtop .navcont{
+	display: flex;
+	align-items: center;
+	margin-left: -5rem;
+}
+
+ .navcall, .navmail{
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
+}
+
+.navcont a,.navcall a,.navmail a{
+	color: white;
+	transition: 0.5s ease;
+}
+
+.navcont a:hover,.navcall a:hover,.navmail a:hover {
+	color: orange;
+}
+
+.navcont img{
+ width: 15px;
+ margin-left: 1rem;
+}
+
+.navcont p{
+	font-size: 1.2rem;
+	letter-spacing: 1.55px;
+	margin-left: 1rem;
+}
+
+
+.navtop .navsocial ul{
+	display: flex;
+	align-items: center;
+	margin-top: 0.5rem;
+}
+
+.navsocial img{
+	width: 15px;
+}
+
+.navtop li{
+list-style: none;
+margin-left: 1rem;
+}
+/*end nav top section*/
+
+
+/*nav bot section*/
+.navbot{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+.navbot ul{
+	display: flex;
+	list-style: none;
+}
+
+.navhead h1{
+	/*width: 0%;*/
+	font-size: 3rem;
+	letter-spacing: 2px;
+	/*border-bottom: 1px solid orange;*/
+}
+
+.navhead span{
+	border-bottom: 1px solid orange;
+}
+
+.navbot ul .navitem{
+	margin-left: 4rem;
+	font-size: 1.3rem;
+	/*font-weight: 200;*/
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.navbot ul .navlink{
+	color: white;
+}
+
+.navbot ul .navlink.active{
+	color: orange;
+}
+
+/*end nav bot section*/
+/*end nav section*/
+
+
+/*main section*/
+#main{
+position: relative;
+}
+
+.main{
+	position: relative;
+width: 100%;
+height: 80rem;
+background: url('images/Home/1st.jpg');
+ background-size: 100%  100%;
+ color: white;
+}
+
+.main:before{
+	content: " ";
+	height: 100%;
+	width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.main .mainhead{
+	width: 38%;
+	position: relative;
+	top: 30%;
+	left: 12%;
+	font-size: 5rem;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 2px;
+	line-height: 8rem;
+	z-index: 1000;
+	padding: 4rem;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.mainhead:before{
+	content: " ";
+	width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: black;
+opacity: 0.6;
+z-index: -1;
+border-bottom: 2px solid white;
+}
+
+.main .mainhead > *{
+	z-index: 1000;
+}
+
+
+.main .mainhead span{
+  border-bottom: 2px solid orange;
+}
+
+.main .mainhead .span1{
+	font-size: 8rem;
+	border: none;
+	color: orange;
+}
+/*end main section*/
+
+/*About section*/
+#about{
+	position: relative;
+}
+
+.about{
+	position: relative;
+	width: 100%;
+	height:67rem;
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	padding: 7rem 5rem;
+	 background-image: url('images/about/back.jpg');
+	 background-size: 100% 100%;
+	 color: white;
+	 border-bottom: 2px solid orange;
+}
+
+.about > *{
+	z-index: 1000;
+}
+
+.about:before{
+	content: " ";
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0.6;
+}
+
+.abouthead span{
+	color: orange;
+	font-size: 8rem;
+}
+
+.aboutleft{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	transform: translateX(20rem);
+}
+
+.about .abouthead{
+	letter-spacing: 5px;
+	line-height: 8rem;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 5rem;
+}
+
+.about .aboutpara{
+	width: 50%;
+	font-size: 1.8rem;
+	border-bottom: 1px solid orange;
+	padding-bottom: 1rem;
+	margin-top: 4rem;
+}
+
+.aboutpara p{
+ letter-spacing: 2px;
+ text-transform: capitalize;
+ font-weight: 200;
+ line-height: 2.5rem;
+}
+
+.about .aboutbtn h2{
+	/*width: 25%;*/
+	padding: 1rem;
+	border: 2px solid orange;
+	margin-top: 2rem;
+	text-align: center;
+	align-items: center;
+	font-weight: 200;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.about .aboutbtn{
+	width: 25%;
+}
+
+.aboutbtn a{
+		color: white;
+		transition: 0.2s ease;
+}
+
+.aboutbtn:hover a{
+	color: black;
+}
+
+.aboutbtn:hover h2{
+	background-color: orange;
+}
+
+.about .aboutright{
+	width: 50%;
+	position: relative;
+	margin-left: 2rem;
+}
+
+.aboutpic1{
+	width: 22rem;
+	height: 25rem;
+  transform: translateY(-4rem);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-image: url("images/about/pic1.jpg");
+  background-size: 100% 95%;
+  margin-left: 5rem;
+  z-index: 100;
+}
+
+.aboutpic1:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+  top: 0;
+  bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.4;
+}
+
+.aboutpic2{
+	width: 22rem;
+	height: 25rem;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	margin-top: -3rem;
+	transform: translateX(20rem);
+	background-image: url("images/about/pic2.jpg");
+	background-size: 100% 100%;
+	z-index: 100;
+}
+
+.aboutbox{
+		position: absolute;
+		border: 2px solid orange;
+			z-index: -1;
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.aboutbox1{
+	width: 22rem;
+	height: 25rem;
+	transform: translateY(-20rem);
+	margin-left: 15rem;
+}
+
+.aboutbox2{
+	width: 22rem;
+	height: 25rem;
+	transform: translateY(-40rem);
+}
+
+.aboutbox3{
+	width: 22rem;
+	height: 20rem;
+	margin-left: 12rem;
+	transform: translateY(-55rem);
+}
+
+.aboutbox4{
+	width: 22rem;
+	height: 20rem;
+	transform: translateY(-32rem);
+	margin-left: 25rem;
+}
+
+
+/*end About Section*/
+
+/*Service section*/
+#services{
+	position: relative;
+	background-color: #d9d9d9;
+	height: 100%;
+}
+
+.services{
+	width: 100%;
+	height: 68rem;
+	display: flex;
+	flex-direction: column;
+	background-size: 100% 100%;
+		background-image: url('images/services/servback2.jpg');
+		border-bottom: 2px solid orange;
+}
+
+.services:before{
+	content: " ";
+	background-color: black;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.8;
+}
+
+.servicehead{
+	width: 100%;
+	height: 20rem;
+	font-size: 5rem;
+ letter-spacing: 6px;
+ font-family: 'IBM Plex Sans', sans-serif;
+ font-weight: 200;
+ align-items: baseline;
+ display: flex;
+ align-items: center;
+ color: white;
+ background-size: 100% 100%;
+ position: relative;
+ z-index: 1;
+ text-align: center;
+
+}
+
+.servicehead h1{
+	z-index: 100;
+	margin-left: 25rem;
+}
+
+.servicehead span{
+	font-size: 7rem;
+	color: #ff8c1a;
+} 
+
+.servicecont{
+	width: 100%;
+ height: 70rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 2rem;
+	padding-bottom: 2rem;
+	align-items: center;
+	overflow-y: hidden;
+	scroll-behavior: smooth;
+	background-size: 100% 100%;
+	transition: 0.5s ease;
+	z-index: 100;
+	position: relative;
+}
+
+.servicecontmain{
+	width: 80%;
+ height: 50rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 2rem;
+	padding-bottom: 2rem;
+	align-items: center;
+	overflow-y: hidden;
+	scroll-behavior: smooth;
+	background-size: 100% 100%;
+	transition: 0.5s ease;
+	position: relative;
+}
+
+.servicecont:hover .servicecontmain{
+	overflow-y: scroll;
+}
+
+
+.servicecontmain::-webkit-scrollbar {
+  width: 15px;
+  transition: 0.5s ease;
+  opacity: 0;
+  padding: 5px;
+  margin: 5rem;
+}
+
+.servicecontmain::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px orange; 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+ /*Handle */
+.servicecontmain::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #001a33; 
+}
+
+ /*Handle on hover */
+.servicecontmain::-webkit-scrollbar:hover {
+  opacity: 1;
+}
+
+.serv{
+width: 50rem;
+margin-left: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+margin-top: 2rem;
+color: white;
+padding: 2rem;
+border: 2px solid orange;
+text-align: center;
+z-index: 100;
+cursor: default;
+ font-family: 'IBM Plex Sans', sans-serif;
+ transition: 0.3s ease;
+ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.serv:hover{
+	color:white;
+	background-color: #001a33;
+	border-color: transparent;
+}
+
+.serv img{
+ width: 50px;
+ height: 50px;
+}
+
+.serv h2{
+	font-size: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	 font-family: 'IBM Plex Sans', sans-serif;
+	 letter-spacing: 1px;
+	 list-style: disc;
+}
+
+.serv .servhead{
+	width: 80%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+/*end service section*/
+
+/*Training section*/
+#training{
+	position: relative;
+}
+
+.training{
+	width: 100%;
+	height: 69rem;
+	/*background-color: #222;*/
+	background-image: url('images/training/train.jpg');
+	background-size: 100% 100%;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	border-bottom: 2px solid orange;
+}
+
+.training:before{
+	content: ' ';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: black;
+	opacity: 0.7;
+}
+
+.training > *{
+	z-index: 1000;
+}
+
+
+.trainhead{
+  color: white;
+  font-size: 5rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  	width: 100%;
+	 letter-spacing: 6px;
+	 margin-top: 4rem;
+}
+
+.trainhead h2{
+	margin-left: 20rem;
+}
+
+.trainhead span{
+	color: orange;
+}
+
+.traindiv{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.traindes{
+	position: relative;
+	width: 100%;
+	/*background-color: black;*/
+	height: 40rem;
+	margin-right: 2rem;
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'IBM Plex Sans', sans-serif;
+	z-index: 1000;
+	text-align: center;
+
+}
+
+.traindes:before{
+	content: " ";
+	background-color: black;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.5;
+	z-index: -1;
+	border-radius: 10px;
+}
+
+.traindes h2{
+	font-size: 5rem;
+	margin-bottom: 5rem;
+}
+
+.traindes h3{
+	font-size: 6rem;
+	border: 2px solid orange;
+	color: orange;
+}
+
+.trainimg,.Galleryimg{
+	width: 100%;
+	margin-top: -3rem;
+}
+
+.traincontainer,.Gallerycontainer{
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.traincontainer > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.traincontainer > a > img ,.Gallerycontainer > a > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 2px 16px var(--shadow);
+  border: 2px solid orange;
+  border-radius: 10px;
+}
+
+.traincontainer ,.Gallerycontainer{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-auto-rows: 120px;
+  grid-auto-flow: dense;
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.appdown{
+	margin-top: 2rem;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	border: 2px solid white;
+	padding: 10px;
+	transition: 0.2s ease;
+}
+
+.appdown img{
+  width: 40px;
+  height: 40px;
+}
+
+.appdown a{
+	color: white;
+	transition: 0.2s ease;
+}
+
+.appdown a:hover{
+	color: orange;
+}
+
+
+/*end Training section*/
+
+/*Gallery section*/
+#Gallery{
+	position: relative;
+}
+
+.Gallery{
+	width: 100%;
+	height: 69rem;
+	background-image: url('images/gallery/back.jpg');
+	background-size: 100% 100%;
+	z-index: 1000;
+	position: relative;
+	 overflow: hidden;
+	 border-bottom: 2px solid orange;
+}
+
+.Gallery:before{
+	content: " ";
+	background-color: black;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.9;
+	z-index: -1;
+}
+
+
+.galleryhead{
+	width: 100%;
+	font-size: 5.5rem;
+	 font-family: 'IBM Plex Sans', sans-serif;
+	 letter-spacing: 6px;
+	 /*margin-top: 8rem;*/
+
+
+}
+
+.galleryhead h1{
+	color: white;
+	margin-left: 20rem;
+}
+
+.galleryhead span{
+	color: orange;
+	font-size: 8rem;
+}
+
+.gallerymain{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-top: -5rem;
+  margin-left: 15rem;
+}
+
+.Gallerycontainer{
+	width: 80%;
+	grid-gap: 20px;
+	object-fit: none;
+	justify-content: center;
+}
+
+.Gallerycontainer > a > img{
+	transition: 0.5s ease;
+}
+
+.Gallerycontainer > a > img:hover{
+	width: 105%;
+}
+
+.Gallerycontainer > a > img:hover .Gallerycontainer{
+	grid-gap: 30px;
+}
+
+
+/*end Gallery section*/
+
+/*Accredition section*/
+#acc{
+ position: relative;
+}
+
+.acc{
+	width: 100%;
+	height: 79rem;
+	/*background-color: #222;*/
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	 background-image: url('images/accr/accback.jpg');
+	 background-size: 100% 100%;
+	 border-bottom: 2px solid orange;
+}
+
+.acc > *{
+	 z-index: 1000;
+}
+
+
+.acc:before{
+	content: " ";
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.8;
+}
+
+
+.acchead{
+	width: 100%;
+	font-size: 5.5rem;
+	 font-family: 'IBM Plex Sans', sans-serif;
+	 letter-spacing: 6px;
+	 margin-top: 8rem;
+
+}
+
+.acchead h1{
+	color: white;
+	margin-left: 20rem;
+}
+
+.acchead span{
+	color: orange;
+	font-size: 7rem;
+}
+
+.acc-cont{
+	width: 100%;
+	color: white;
+	display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.acc-c{
+	width: 100%;
+	height: 30rem;
+}
+
+.acc-des{
+	display: flex;
+	justify-content: center;
+  padding: 1rem;
+  position: relative;
+  margin-top: 4rem;  
+}
+
+.acc-des p:before{
+	content:  " ";
+	width: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 25%;
+	bottom: 0;
+	background-color: black;
+	opacity: 0.4;
+	z-index: -1;
+	padding: 3rem;
+}
+
+.acc-des .acc-para{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-left: 6rem;
+}
+
+
+.acc-des p{
+	width: 60%;
+	font-size: 2rem;
+		font-family: 'IBM Plex Sans', sans-serif;
+		letter-spacing: 2px;
+		text-transform: capitalize;
+		line-height: 3rem;
+		border-bottom: 2px solid orange;
+}
+
+.acc-des .acc-para span{
+  color: orange;
+}
+
+.accfile{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	/*align-items: center;*/
+	position: relative;
+}
+
+.accfile-cont{
+	width: 100%;
+	display: flex;
+	margin-top: 5rem;
+}
+
+.accfilehead h1{
+	font-size: 2rem;
+	font-family: 'IBM Plex Sans', sans-serif;
+	letter-spacing: 2px;
+	text-decoration: none;
+	color: orange;
+}
+
+.accfilehead span{
+	color: white;
+	text-decoration: underline;
+		text-decoration-color: orange;
+}
+
+.acccont{
+	width: 20rem;
+	height: 25rem;
+	border: 2px solid orange;
+	margin-left: 1rem;
+	position: relative;
+	background-image: url('docs/abc.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+.acccont1 a{
+	display: none;
+	position: absolute;
+	bottom: 0;
+	border: 2px solid orange;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ color: black;
+ font-size:0.5rem;
+ font-weight: 800;
+ background-color: orange;
+ letter-spacing: 2px;
+ text-align: center;
+ font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+/*end Accredition section*/
+
+/*contact section*/
+#contact{
+	position: relative;
+}
+
+.contact{
+	position: relative;
+	width: 100%;
+	min-height: 69rem;
+	background-color: #14141f;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	 /*background-image: url('images/accr/accback.jpg');*/
+	 background-size: 100% 100%;
+	 border: 2px solid orange;
+}
+
+/*.contact:before{
+	content: " ";
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.8;
+}*/
+
+.contact > *{
+	z-index: 10000;
+}
+
+
+.contact-head{
+	width: 100%;
+	font-size: 5.5rem;
+	 font-family: 'IBM Plex Sans', sans-serif;
+	 letter-spacing: 6px;
+	 margin-top: 8rem;
+
+}
+
+.contact-head h1{
+	color: white;
+	margin-left: 20rem;
+}
+
+.contact-head span{
+	color: orange;
+	font-size: 7rem;
+}
+
+.contact-cont{
+	width: 100%;
+	color: white;
+	display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+
+.contact-c{
+	width: 40rem;
+	height: 25rem;
+	border: 2px solid orange;
+	margin-left: 4rem;
+	padding: 1rem;
+	border-radius: 10px;
+	  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+
+.contact-cont1 .social,.contact-cont2 .callingcard,.contact-cont3 .emailcard{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.contact-cont1 .social .navcap,.navcap{
+	font-size: 3rem;
+	font-family: 'IBM Plex Sans', sans-serif;
+	letter-spacing: 2px;
+}
+
+.contact-cont1 .social .navcap span,.navcap span{
+	color: orange;
+}
+
+.social .navsocial ul{
+	display: flex;
+	list-style: none;
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.social .navsocial ul img,.callingcard img,.emailcard img{
+	width: 4rem;
+}
+
+.social .navsocial ul li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-right: 2rem;
+}
+
+.social .navsocial ul li a{
+	color: white;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+}
+
+
+.contact-cont2 .navcall{
+	margin-top: 4rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.contact-cont2 .navcall p{
+	font-size: 1.4rem;
+	margin-top: 1rem;
+	letter-spacing: 2px;
+
+}
+
+.emailcard .navcontitem{
+	margin-top: 4.5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.emailcard .navcontitem p{
+	color: white;
+	font-size: 1.4rem;
+	letter-spacing: 1px;
+	margin-top: 1rem;
+}
+
+
+/*form section*/
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contactform input[type="text"], #contactform input[type="email"], #contactform input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contactform{
+	background: #14141f;
+	padding:25px;
+	margin:50px 0;
+	margin-left: 5rem;
+	border: 2px solid orange;
+	border-radius: 10px;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#contactform h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contactform h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+	color: white;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contactform input[type="text"], #contactform input[type="email"], #contactform input[type="tel"], #contactform input[type="url"], #contactform textarea {
+	width:100%;
+	border:1px solid orange;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius: 10px;
+}
+
+#contactform input[type="text"]:hover, #contactform input[type="email"]:hover, #contactform input[type="tel"]:hover, #contactform input[type="url"]:hover, #contactform textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contactform textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contactform button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background: orange;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+	transition: 0.5s ease-in-out;
+}
+
+#contactform button[type="submit"]:hover {
+	background:orange;
+	padding: 15px;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contactform button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contactform input:focus, #contactform textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+/*end form section*/
+
+
+/*end contact section*/
+/*end hero section*/
